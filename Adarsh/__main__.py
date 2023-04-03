@@ -63,12 +63,6 @@ async def start_services():
     bind_address = "0.0.0.0" if Var.ON_HEROKU else Var.BIND_ADRESS
     await web.TCPSite(app, bind_address, Var.PORT).start()
     print('----------------------------- DONE ---------------------------------------------------------------------')
-    print('\n')
-    print('---------------------------------------------------------------------------------------------------------')
-    print('---------------------------------------------------------------------------------------------------------')
-    print(' follow me for more such exciting bots! https://github.com/aadhi000')
-    print('---------------------------------------------------------------------------------------------------------')
-    print('\n')
     print('----------------------- Service Started -----------------------------------------------------------------')
     print('                        bot =>> {}'.format((await StreamBot.get_me()).first_name))
     print('                        server ip =>> {}:{}'.format(bind_address, Var.PORT))
@@ -76,7 +70,7 @@ async def start_services():
     if Var.ON_HEROKU:
         print('                        app runnng on =>> {}'.format(Var.FQDN))
     print('---------------------------------------------------------------------------------------------------------')
-    print('Give a star to my repo https://github.com/adarsh-goel/filestreambot-pro  also follow me for new bots')
+    print('BOT STARTED.......')
     print('---------------------------------------------------------------------------------------------------------')
     await idle()
 
